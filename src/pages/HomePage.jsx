@@ -6,7 +6,6 @@ import Loading from "../components/Loading";
 import LocaleContext from "../contexts/LocaleContext";
 import { getActiveNotes } from "../utils/network-data";
 import { useSearchParams } from "react-router-dom";
-import { FiPlus } from "react-icons/fi";
 import { HiPencil } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
@@ -59,17 +58,9 @@ function HomePage() {
           title={selectLanguage({ id: "Tambah", en: "Add" })}
           onClick={onAddButtonHandler}
         >
-          <HiPencil className="text-2xl text-white" />
+          <HiPencil className="text-2xl text-orange-600" />
         </button>
       </div>
-
-      {/* <div className="homepage__action">
-        <ButtonAction
-          title={selectLanguage({ id: "Tambah", en: "Add" })}
-          onClick={onAddButtonHandler}
-          icon={<FiPlus />}
-        />
-      </div> */}
     </section>
   );
 }

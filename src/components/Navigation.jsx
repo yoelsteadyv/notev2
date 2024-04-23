@@ -37,7 +37,7 @@ function Navigation({ logout, name }) {
             onClick={toggleLocale}
             title={selectLanguage({ id: "Terjemahan", en: "Translate" })}
           >
-            <HiTranslate className="text-xl font-black" />
+            <HiTranslate className="text-xl font-black text-orange-600" />
           </button>
           <p>|</p>
           <button
@@ -45,9 +45,9 @@ function Navigation({ logout, name }) {
             onClick={toggleTheme}
           >
             {theme === "light" ? (
-              <PiMoonDuotone className="text-xl font-black" />
+              <PiMoonDuotone className="text-xl font-black text-orange-600" />
             ) : (
-              <PiSunDuotone className="text-xl font-black" />
+              <PiSunDuotone className="text-xl font-black text-orange-600" />
             )}
           </button>
           <p>|</p>
@@ -60,7 +60,7 @@ function Navigation({ logout, name }) {
                 onClick={logout}
                 title={selectLanguage({ id: "Keluar", en: "LogOut" })}
               >
-                <TbLogout2 className="ml-1 text-xl font-black" />
+                <TbLogout2 className="ml-1 text-xl font-black text-red-700" />
               </button>
             </>
           )}

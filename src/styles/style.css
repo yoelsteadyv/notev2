@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --primary: #bb86fc;
   --primary-variant: #3700b3;
   --secondary: #03dac6;
@@ -340,4 +340,4 @@ main {
   .notes-list {
     grid-template-columns: repeat(4, 1fr);
   }
-} */
+}
